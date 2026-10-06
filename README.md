@@ -4,21 +4,23 @@ Persistent, structured memory repository for the Founder AI Workforce.
 
 ## Purpose
 
-This repository is the durable memory layer for the Founder and the AI Workforce. It exists so project decisions, verified facts, operating constraints, project state, lessons, and recovery context can survive individual chat sessions and free-plan context limits.
+This repository is the durable memory layer for the Founder and the AI Workforce. It exists so project decisions, verified facts, operating constraints, project state, lessons, and recovery context survive individual chat sessions and free-plan context limits.
 
-## Source-of-truth boundary
+## Three-repository architecture
 
-- Central project architecture and governance: `rllibo833-sudo/kawasan-masjid-1000ha`
-- Durable memory: this repository
-- Project execution: project-specific repositories
-- Git history: audit trail
-- Founder: root authority / final approver
+These repositories are one system, not three independent projects:
+
+- **Founder-ai-memory** — 🧠 durable memory, principles, reusable knowledge, and orchestration context.
+- **kawasan-masjid-1000ha** — ⚙️ canonical Project OS, runnable capabilities, backend, evidence, operations, and economic infrastructure.
+- **Landing-page-prototype** — 🌐 public discovery/storytelling and inbound front door.
+
+The canonical execution source of truth is always the Project OS. This memory repository should remain intentionally small and change only when durable context is worth preserving.
 
 ## Memory rule
 
 Do not store raw chat transcripts by default. Extract structured records:
 
-`Conversation → Decision / Fact / Lesson / Task / Prompt → Validation → Memory Record → Commit`
+`Conversation → Decision / Fact / Lesson / Task / Prompt → Validation → Memory Record`
 
 Every important memory must have a status:
 
@@ -29,17 +31,9 @@ Every important memory must have a status:
 - SUPERSEDED
 - ARCHIVED
 
-## Recovery protocol
+## Founder leverage model
 
-`NEW CHAT → LOAD CENTRAL REGISTRY → LOAD RELEVANT MEMORY → LOAD PROJECT STATUS → LOAD ACTIVE CONTRACTS → CONTINUE`
-
-## Security
-
-Never store passwords, OTPs, API keys, payment secrets, KYC documents, private credentials, or unnecessary sensitive personal information.
-
-## Founder operating position
-
-Founder is:
+The Founder is:
 
 - Solo Founder
 - System Architect
@@ -50,25 +44,29 @@ Founder is:
 - Final Accepter / Approver
 - Economic Beneficiary / Margin Owner
 
-Founder operating boundary:
+The Founder is **not** a FOMO/vibe coder, job seeker, manual prospect hunter, generic freelancer, or passive funding seeker.
 
-- Founder is **not** a FOMO/vibe coder.
-- Founder is **not** the manual prospect-searching or lead-generation layer.
-- Founder is **not** a job seeker, job applicant, funding seeker, or FOMO/vibe-coding operator.
-- AI is the research/execution partner responsible for the loop: **discover → research → qualify → prepare → execute where permitted → verify → learn → repeat**.
-- Founder reviews evidence and accepts or rejects consequential external actions, commercial commitments, sensitive-data movement, and other irreversible decisions.
-- AI must never self-accept on the Founder's behalf.
-- The system is optimized for **economic margin and operational leverage**, not activity volume. A task/opportunity is valuable only when it has a credible path to proof, payment/value, and positive margin.
+AI is leverage for repeatable cognitive work:
 
-Founder is not positioned as a job seeker, employee applicant, generic freelancer, or manual salesperson.
+**discover → research → structure → compare → draft → validate → monitor → learn**
+
+The Founder retains judgment over direction, consequential external action, acceptance, commercial decisions, sensitive-data movement, spending, and margin.
+
+Canonical economic loop:
+
+**REAL NEED → QUALIFY → FOUNDER GATE → AI-ASSISTED DELIVERY → ACCEPTANCE → PAYMENT → VERIFIED MARGIN → REUSE → SCALE**
+
+The objective is not activity volume. The objective is useful outcomes that can become repeatable with positive or explainable margin.
 
 ## North Star
 
-The original Kawasan Masjid 1.000 Ha blueprint remains the long-term North Star.
+The original **Kawasan Masjid 1.000 Ha** blueprint remains the long-term North Star.
 
-Current priority:
+Current strategy:
 
-**Complete and integrate the digital ecosystem first.**
+**Complete and validate the digital ecosystem first, using free/low-cost infrastructure where practical, then reinvest verified value into greater capability.**
+
+The digital ecosystem is a proving ground for real-world impact; it is not a substitute for the physical vision.
 
 ## Evidence rule
 
@@ -81,33 +79,53 @@ Funding approval ≠ cash received.
 Delivery ≠ paid.  
 Payment ≠ profit.
 
+## Current execution gate
+
+The next meaningful milestone is not another architecture document.
+
+It is:
+
+**PROBLEM → RUNNABLE SOLUTION → REAL USE → INSIGHT → ITERATE → PROOF → ECONOMIC VALUE**
+
+The Project OS contains the runtime contract for this path:
+
+[Real Problem → Output Loop](https://github.com/rllibo833-sudo/kawasan-masjid-1000ha/blob/main/docs/runtime/REAL_PROBLEM_TO_OUTPUT_LOOP_V1.md)
+
+[Quickstart Problem Solver](https://github.com/rllibo833-sudo/kawasan-masjid-1000ha/blob/main/docs/runtime/QUICKSTART_PROBLEM_SOLVER_V1.md)
+
 ## Discovery path
 
-If you are looking for a concrete way to work with this system, the canonical Project OS exposes the first bounded capability: **AI-assisted Operations / Research Pack**.
+For a concrete capability, go to the canonical Project OS:
 
-- [Capability Pack](https://github.com/rllibo833-sudo/kawasan-masjid-1000ha/blob/main/docs/strategy/EXTERNAL_CAPABILITY_PACK_V1.md)
-- [Request a capability](https://github.com/rllibo833-sudo/kawasan-masjid-1000ha/issues/new?template=request-capability.md)
-- Founder inbound: **fadlibo833@gmail.com**
+[Capability Pack](https://github.com/rllibo833-sudo/kawasan-masjid-1000ha/blob/main/docs/strategy/EXTERNAL_CAPABILITY_PACK_V1.md)
 
-## Public project entry point
+[Request a capability](https://github.com/rllibo833-sudo/kawasan-masjid-1000ha/issues/new?template=request-capability.md)
 
-The public-facing Project OS and primary capability surface is:
+Founder inbound: **fadlibo833@gmail.com**
 
-**[Kawasan Masjid 1.000 Ha](https://github.com/rllibo833-sudo/kawasan-masjid-1000ha)**
+## Recovery protocol
 
-That repository is where external readers can understand the real-world vision, current capabilities, evidence boundaries, collaboration model, and the path from a concrete need to a verified economic outcome.
+`NEW CHAT → LOAD CENTRAL REGISTRY → LOAD RELEVANT MEMORY → LOAD PROJECT STATUS → LOAD ACTIVE CONTRACTS → CONTINUE`
+
+## Security
+
+Never store passwords, OTPs, API keys, payment secrets, KYC documents, private credentials, or unnecessary sensitive personal information.
 
 ## Repository relationship
 
 ```
-Founder AI Memory
-       ↑
-       │ durable context
-       │
-Kawasan Masjid 1.000 Ha
-       │
-       ├── Project repositories
-       └── AI Workforce
+                    WORLD
+                      ↓
+           Landing-page-prototype
+                      ↓
+          kawasan-masjid-1000ha
+                      ↕
+             Founder-ai-memory
+                      ↓
+             reusable learning
+                      ↺
 ```
 
-This repository is intentionally small at first. Expand only when a real memory requirement exists.
+The system should improve through evidence and real use, not through uncontrolled feature accumulation.
+
+**No Proof, No Claim.**
