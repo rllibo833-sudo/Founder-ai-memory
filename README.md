@@ -81,6 +81,14 @@ Funding approval ≠ cash received.
 Delivery ≠ paid.  
 Payment ≠ profit.
 
+## Discovery path
+
+If you are looking for a concrete way to work with this system, the canonical Project OS exposes the first bounded capability: **AI-assisted Operations / Research Pack**.
+
+- [Capability Pack](https://github.com/rllibo833-sudo/kawasan-masjid-1000ha/blob/main/docs/strategy/EXTERNAL_CAPABILITY_PACK_V1.md)
+- [Request a capability](https://github.com/rllibo833-sudo/kawasan-masjid-1000ha/issues/new?template=request-capability.md)
+- Founder inbound: **fadlibo833@gmail.com**
+
 ## Public project entry point
 
 The public-facing Project OS and primary capability surface is:
