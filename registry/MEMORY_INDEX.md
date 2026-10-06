@@ -27,3 +27,4 @@
 ## Integrity rule
 
 No secrets, credentials, OTPs, payment secrets, KYC, or unnecessary sensitive personal data may be committed to this public memory repository.
+| MEM-20261006-0011 | 2026-10-06 | FOUNDER-APPROVED | KM1000-P001 | [ASTIF Institutional Mapping](../memory/2026-10-06-ASTIF-INSTITUTIONAL-MAPPING.md) |
