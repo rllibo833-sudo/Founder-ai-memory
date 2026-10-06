@@ -81,6 +81,14 @@ Funding approval ≠ cash received.
 Delivery ≠ paid.  
 Payment ≠ profit.
 
+## Public project entry point
+
+The public-facing Project OS and primary capability surface is:
+
+**[Kawasan Masjid 1.000 Ha](https://github.com/rllibo833-sudo/kawasan-masjid-1000ha)**
+
+That repository is where external readers can understand the real-world vision, current capabilities, evidence boundaries, collaboration model, and the path from a concrete need to a verified economic outcome.
+
 ## Repository relationship
 
 ```
