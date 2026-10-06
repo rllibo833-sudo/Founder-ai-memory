@@ -13,6 +13,8 @@
 | MEM-20261006-0009 | 2026-10-06 | FOUNDER-APPROVED | KM1000-P001 | [Repository Hygiene & Cross-Chat Sync](../memory/2026-10-06-REPOSITORY-HYGIENE-AND-SYNC.md) |
 | MEM-20261006-0010 | 2026-10-06 | FOUNDER-APPROVED | KM1000-P001 | [ASTIF Capability Mapping V2](../memory/2026-10-06-ASTIF-CAPABILITY-MAPPING-V2.md) |
 
+| MEM-20261006-0014 | 2026-10-06 | VERIFIED | KM1000-P001 | [Auth Runtime Bootstrap Fix](../memory/2026-10-06-AUTH-RUNTIME-BOOTSTRAP-FIX.md) |
+
 ## Recovery sources
 
 1. Central OS: `rllibo833-sudo/kawasan-masjid-1000ha`
