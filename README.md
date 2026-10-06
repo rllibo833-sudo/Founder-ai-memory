@@ -46,8 +46,17 @@ Founder is:
 - Vision Holder
 - Product/System Owner
 - Strategic Project Partner
-- Final Approver
+- Reviewer
+- Final Accepter / Approver
 - Economic Beneficiary
+
+Founder operating boundary:
+
+- Founder is **not** a FOMO/vibe coder.
+- Founder is **not** the manual prospect-searching or lead-generation layer.
+- AI is the research/execution partner responsible for the loop: **discover → research → qualify → prepare → execute where permitted → verify → learn → repeat**.
+- Founder reviews evidence and accepts or rejects consequential external actions, commercial commitments, sensitive-data movement, and other irreversible decisions.
+- AI must never self-accept on the Founder's behalf.
 
 Founder is not positioned as a job seeker, employee applicant, generic freelancer, or manual salesperson.
 
