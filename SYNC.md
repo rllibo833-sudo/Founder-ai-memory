@@ -45,3 +45,11 @@ REAL NEED / CAPABILITY / PILOT / IMPLEMENTATION PATHWAY
 → PROVE
 
 External proof outranks additional decorative features.
+
+## Public narrative decision — 2026-10-07
+
+PUBLIC was strengthened to make the operating model independently understandable: Founder role, AI execution role, three-repository inspection path, and the distinction between implemented capability and future plans are now explicit in the public README.
+
+This is a narrative/proof-surface improvement only. It does **not** change economic truth, partnership status, maturity claims, or physical implementation status.
+
+The next priority remains external proof: a real need, capability contribution, pilot, implementation pathway, accepted deliverable, payment, or verified collaboration. Do not add decorative features merely to create the appearance of traction.
