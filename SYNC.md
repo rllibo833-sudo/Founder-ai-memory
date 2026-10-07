@@ -114,3 +114,26 @@ The long-term architecture must remain recoverable even if a free service, AI pr
 
 Next engineering priority: improve AI execution reliability and prove the complete golden path with real output and human verification before expanding the economic engine or adding decorative features.
 
+
+## 2026-10-07 — AI execution reliability: provider quota circuit breaker
+
+Fresh runtime evidence showed the Gemini provider was not merely temporarily busy: the active `gemini-3.8-flash` Free Tier returned a daily quota exhaustion message (20 requests/day) with a provider-supplied reset estimate. The previous worker treated every retryable provider error alike and therefore re-attempted the same exhausted daily quota every minute.
+
+Reliability hardening was applied without adding Founder manual work:
+- Supabase `ai-execute` is now ACTIVE version 8.
+- Daily/quota exhaustion is classified separately from transient 429/5xx failures.
+- Provider status, quota state, and parsed retry-after seconds are preserved in the response.
+- Daily quota exhaustion no longer receives four futile retries inside one execution.
+- `ai-queue-worker` is now ACTIVE version 3.
+- The worker has a provider circuit breaker based on the latest quota failure and waits until the provider-supplied retry window before attempting another task.
+- One-task-at-a-time execution and `EdgeRuntime.waitUntil(...)` remain unchanged.
+- The queue remains queued rather than falsely completing work when the provider cannot execute it.
+
+Source-of-truth synchronization:
+- CORE `ai-execute` reliability commit: `6a552019c4b291fe1edc02519e6931565451a7d7`
+- CORE `ai-queue-worker` circuit-breaker commit: `d8caa5fac163c4f5616a53a5c07885de55bd48c4`
+- Supabase `ai-execute`: ACTIVE v8
+- Supabase `ai-queue-worker`: ACTIVE v3
+
+Verification principle remains unchanged: provider quota recovery is not the same as successful AI execution. The next proof gate is still one real `ai_output` reaching Review with human verification. Economic truth remains 0 verified customers, 0 verified partners, Rp0 verified payment, Rp0 verified margin, and no physical implementation claim.
+
