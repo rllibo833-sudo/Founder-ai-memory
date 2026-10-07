@@ -75,3 +75,21 @@ Economic truth remains unchanged: 0 verified customers, 0 verified partners, Rp0
 - Supabase `ai-execute`: ACTIVE, version 5, `verify_jwt=true`
 
 PUBLIC remains the external discovery surface; CORE remains the runtime/economic authority; MEMORY preserves this durable state.
+
+## 2026-10-07 — Controlled AI queue worker
+
+CORE now has a server-side controlled AI queue worker. `ai-execute` is ACTIVE version 7 with bounded Gemini request timeouts plus transient-error retries. `ai-queue-worker` is ACTIVE version 2 and processes one queued task at a time using `EdgeRuntime.waitUntil(...)`. Supabase Cron invokes the worker every minute and the worker refuses to claim another task while one is already running.
+
+Live verification succeeded for the scheduler and worker path: the Cron job is active, a real worker invocation returned HTTP 200/accepted, and a real queued task was claimed. Gemini then returned a temporary high-demand error; the task was correctly returned to `queued` with `retryable=true` rather than falsely marked completed. No `ai_outputs` record was created from that failed attempt.
+
+Verification snapshot: 39 queued, 0 running, 1 review, 0 completed, 0 ai_outputs. Economic truth remains unchanged: 0 verified customers, 0 verified partners, Rp0 verified payment, Rp0 verified margin, and no physical implementation claim.
+
+Runtime anchors after this change:
+- CORE queue worker source: `supabase/functions/ai-queue-worker/index.ts`
+- CORE `ai-execute`: ACTIVE version 7
+- Supabase `ai-queue-worker`: ACTIVE version 2
+- Supabase Cron: `ai-queue-worker-every-minute` active
+- CORE queue worker commit: `0a8959e0fd11e21df5207bf71f91c838659e7bc3`
+- CORE AI timeout commit: `84c7ac3cd0a1354871c5c56b47d2bea6cb102ec3`
+
+Provider capacity remains the current bottleneck. The system now retries transient provider failures and keeps the Founder out of manual queue-draining work.
