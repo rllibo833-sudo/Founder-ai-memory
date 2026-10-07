@@ -93,3 +93,24 @@ Runtime anchors after this change:
 - CORE AI timeout commit: `84c7ac3cd0a1354871c5c56b47d2bea6cb102ec3`
 
 Provider capacity remains the current bottleneck. The system now retries transient provider failures and keeps the Founder out of manual queue-draining work.
+
+## 2026-10-07 — Founder architecture and operating principle
+
+Founder decision: the project foundation is now considered a live operational machine, but the economic engine must not be considered proven until AI execution reliability and real external proof are established.
+
+Operating principle:
+**NO PROOF → NO CLAIM.**
+
+This means the system must not claim customers, traction, revenue, partnerships, production maturity, or economic success without verifiable evidence. Repository activity, AI-generated output, deployment activity, or task volume alone are not economic proof.
+
+The project must continue to optimize for a Founder-owned system rather than FOMO/vibe coding. The Founder remains the originator, system owner, strategic director, reviewer, and final accepter. AI and connected tools are execution interfaces; GitHub, CORE, Supabase, and MEMORY remain the durable system assets and source-of-truth layers.
+
+The three repositories remain one synchronized system:
+- PUBLIC: external story, discovery, and inbound surface.
+- CORE: runtime, backend, AI workforce, evidence, and economic authority.
+- MEMORY: durable decisions, constraints, verified facts, continuity, and recovery context.
+
+The long-term architecture must remain recoverable even if a free service, AI provider, plugin, or connected tool becomes unavailable. Free tiers are runway, not the project's ownership foundation.
+
+Next engineering priority: improve AI execution reliability and prove the complete golden path with real output and human verification before expanding the economic engine or adding decorative features.
+
