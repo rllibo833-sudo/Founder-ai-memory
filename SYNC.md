@@ -53,3 +53,7 @@ PUBLIC was strengthened to make the operating model independently understandable
 This is a narrative/proof-surface improvement only. It does **not** change economic truth, partnership status, maturity claims, or physical implementation status.
 
 The next priority remains external proof: a real need, capability contribution, pilot, implementation pathway, accepted deliverable, payment, or verified collaboration. Do not add decorative features merely to create the appearance of traction.
+
+## 2026-10-07 — Secure AI execution bridge
+
+CORE now contains and Supabase hosts the first server-side AI execution bridge: authenticated frontend calls `/functions/v1/ai-execute`, the Edge Function requires a valid Supabase JWT, provider credentials remain outside the browser and repository, and the function is configured for Gemini through the `GEMINI_API_KEY` secret with an optional `GEMINI_MODEL` setting. The source is merged to CORE main and the Supabase function is ACTIVE. This does **not** yet prove automatic model execution end-to-end because the provider secret has not been verified as configured and no real `ai_output` from this endpoint has been accepted through human review. Economic truth remains unchanged: 0 verified customers, 0 verified partners, Rp0 verified payment, Rp0 verified margin, and no physical implementation claim.
