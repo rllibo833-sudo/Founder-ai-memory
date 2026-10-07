@@ -57,3 +57,21 @@ The next priority remains external proof: a real need, capability contribution, 
 ## 2026-10-07 — Secure AI execution bridge
 
 CORE now contains and Supabase hosts the first server-side AI execution bridge: authenticated frontend calls `/functions/v1/ai-execute`, the Edge Function requires a valid Supabase JWT, provider credentials remain outside the browser and repository, and the function is configured for Gemini through the `GEMINI_API_KEY` secret with an optional `GEMINI_MODEL` setting. The source is merged to CORE main and the Supabase function is ACTIVE. This does **not** yet prove automatic model execution end-to-end because the provider secret has not been verified as configured and no real `ai_output` from this endpoint has been accepted through human review. Economic truth remains unchanged: 0 verified customers, 0 verified partners, Rp0 verified payment, Rp0 verified margin, and no physical implementation claim.
+
+
+## 2026-10-07 — Golden path merged
+
+CORE PR #58 is merged to `main` at `d1174d217d1d10827ac2ed00beff7045406e8a21`. The merged change makes authenticated AI execution persist the AI output and then create a review packet linked to the latest output as a traceable finding requiring human verification.
+
+This improves repository/runtime traceability but is not itself proof of an end-to-end real-user completion. The next verification target is one real authenticated task producing an `ai_outputs` row, a linked `review_packet_item`, a human review, and a completed task.
+
+Economic truth remains unchanged: 0 verified customers, 0 verified partners, Rp0 verified payment, Rp0 verified margin, and no physical implementation claim.
+
+## Current synchronization anchors
+
+- CORE main: `d1174d217d1d10827ac2ed00beff7045406e8a21`
+- PUBLIC main: `56b485254e216bfa21c5c582502c667606651d7b`
+- Supabase project: `lnpzgrodwnhthcwudebk`
+- Supabase `ai-execute`: ACTIVE, version 5, `verify_jwt=true`
+
+PUBLIC remains the external discovery surface; CORE remains the runtime/economic authority; MEMORY preserves this durable state.
