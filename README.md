@@ -74,3 +74,8 @@ The public entry point is intentionally self-service so ordinary questions do no
 Authoritative repository boundaries are defined in [CORE/SYSTEM_CONTRACT.md](https://github.com/rllibo833-sudo/kawasan-masjid-1000ha/blob/main/SYSTEM_CONTRACT.md).
 
 **This repository is the memory layer, not the front door.**
+
+
+## System link map
+
+See [`SYSTEM_LINK_MAP.md`](docs/SYSTEM_LINK_MAP.md) for the canonical three-repository synchronization boundary.
