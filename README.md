@@ -15,7 +15,7 @@ Preserve durable context that must survive individual conversations:
 - current state
 - recovery context
 
-Temporary chat noise and speculative ideas do not belong here.
+Temporary chat noise, runtime code, public marketing copy, and speculative feature lists do not belong here.
 
 ## Three-repository system
 
@@ -24,6 +24,10 @@ Temporary chat noise and speculative ideas do not belong here.
 - **PUBLIC:** `rllibo833-sudo/Landing-page-prototype` — human-facing public website
 
 See [SYSTEM_CONTRACT.md](SYSTEM_CONTRACT.md).
+
+## How another person uses MEMORY
+
+Most visitors should **read, not modify**, this repository. Use it when you need to understand durable decisions, constraints, verified facts, and why the system is structured as it is. The canonical contract is [SYSTEM_CONTRACT.md](SYSTEM_CONTRACT.md).
 
 ## Memory status model
 
