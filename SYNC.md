@@ -15,10 +15,33 @@ All three repositories are reviewed as one system from the perspective of a huma
 When runtime truth changes: CORE first, then MEMORY, then PUBLIC for verified external information.
 No repository may invent a different identity, capability, maturity, or economic result.
 
-## Current truth
+## Current truth — Day 05 / 2026-10-07
 Customer: 0 verified
 Partner: 0 verified
 Payment: Rp0 verified
+Verified margin: Rp0
 Physical implementation: not claimed
+Supabase project: ACTIVE_HEALTHY
 
 **NO PROOF, NO CLAIM.**
+
+## Supabase hardening notes
+Current advisors report:
+- Security WARN: leaked password protection disabled.
+- Performance findings: unindexed foreign keys, RLS initplan patterns, multiple permissive policies, duplicate indexes, and other unused-index notices.
+
+These are recorded as technical hardening items. They are not economic proof and do not change the public maturity claim.
+
+## Day 05 decision
+The system is now treated as an inbound-ready foundation rather than a feature-accumulation exercise.
+
+Priority order after stabilization:
+
+REAL NEED / CAPABILITY / PILOT / IMPLEMENTATION PATHWAY
+→ QUALIFY
+→ FOUNDER GATE
+→ DELIVER
+→ ACCEPT
+→ PROVE
+
+External proof outranks additional decorative features.
