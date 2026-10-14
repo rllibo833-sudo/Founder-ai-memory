@@ -1,81 +1,32 @@
-# Founder AI Memory — MEMORY Layer
+# Founder AI Memory — LEGACY ARCHIVE
 
-> Durable context and decision memory for the Founder-owned project system.
+> **Status: legacy / read-only for new work as of 2026-10-14.** The canonical MEMORY authority is now [Founder-OS](https://github.com/rllibo833-sudo/Founder-OS).
 
-This repository is the **MEMORY** layer of a three-repository system. It is not the public product, application runtime, or main collaboration entry point.
+This repository is retained as a historical recovery snapshot while cross-repository references are inventoried. Do not create new decisions, status records, architecture documents, or memory records here. New durable records belong in Founder-OS.
 
-## The three repositories
+## Canonical system
 
-| Layer | Repository | Purpose |
+| Layer | Canonical source | Owns |
 |---|---|---|
-| **PUBLIC** | [Landing-page-prototype](https://github.com/rllibo833-sudo/Landing-page-prototype) | Human-facing website, project story, discovery, and public inbound |
-| **CORE** | [kawasan-masjid-1000ha](https://github.com/rllibo833-sudo/kawasan-masjid-1000ha) | Project OS, runtime, backend, evidence, AI workforce, and economic truth |
-| **MEMORY** | **Founder-ai-memory** | Durable Founder decisions, verified facts, constraints, lessons, and recovery context |
+| MEMORY | [Founder-OS](https://github.com/rllibo833-sudo/Founder-OS) | Durable Founder decisions, accepted strategy, architecture boundaries, continuity and recovery context |
+| CORE | [kawasan-masjid-core](https://github.com/rllibo833-sudo/kawasan-masjid-core) | Runtime, Supabase, operational state, evidence, execution and economic truth |
+| PUBLIC | [kawasan-masjid-public](https://github.com/rllibo833-sudo/kawasan-masjid-public) | Public-safe website, landing pages and inbound experience |
+| Shared language | [PusingCuk](https://github.com/rllibo833-sudo/pusingcuk) | Language spec, runtime/compiler, CLI and conformance tests; not a fourth project authority |
 
-### Where should a first-time visitor go?
+The current ownership and synchronization contract is maintained in [Founder-OS](https://github.com/rllibo833-sudo/Founder-OS/blob/main/docs/CANONICAL_INTEGRATION_CONTRACT.md) and its [system link map](https://github.com/rllibo833-sudo/Founder-OS/blob/main/docs/SYSTEM_LINK_MAP.md).
 
-**Start with PUBLIC.**
+## What happens to the historical records?
 
-→ [Open the public website](https://rllibo833-sudo.github.io/Landing-page-prototype/)  
-→ [Inspect the CORE Project OS](https://github.com/rllibo833-sudo/kawasan-masjid-1000ha)  
-→ Return here only if you need to understand durable project decisions or system continuity.
+A read-only tree comparison on 2026-10-14 found 67 paths shared with Founder-OS; 61 shared files had identical Git blob SHA values. That confirms exact duplicate file content at this snapshot, not that every historical link has been inventoried.
 
-## What this repository is for
+The duplicated files are **not deleted by this archive notice**. Removal is deferred until inbound references and unique history have been checked. The canonical copies in Founder-OS remain the source for current memory work. After references have a safe replacement path, this repository can be archived through GitHub repository settings.
 
-MEMORY preserves context that should survive across sessions and implementation cycles:
+## Rules for anyone landing here
 
-- durable Founder decisions;
-- project constraints and boundaries;
-- verified status records;
-- lessons learned;
-- synchronization records;
-- recovery context for AI-assisted work.
+- Do not append new MEM records to this repository.
+- Do not treat its old system names or old URLs as current.
+- Follow canonical links above for current plans/status.
+- CORE evidence, not this historical archive, is authoritative for current operational state.
+- Do not put secrets, tokens or private operational data in memory/public repositories.
 
-It exists so the project does not depend on one conversation or one working session.
-
-## What this repository is not
-
-MEMORY is **not**:
-
-- the public landing page;
-- the application/backend runtime;
-- a customer portal;
-- a place to store credentials or secrets;
-- evidence that a partner, customer, investor, payment, or physical implementation exists.
-
-Individual memory records may be detailed because they preserve internal continuity. They should not be mistaken for public product claims.
-
-## Founder boundary
-
-The Founder is the **Originator / System Owner / Strategic Director / Reviewer / Final Accepter / Economic Beneficiary**.
-
-AI provides research, analysis, implementation, testing, monitoring, documentation, and repetitive operational leverage.
-
-Consequential external commitments remain behind the **Founder Gate**.
-
-## Truth rule
-
-**NO PROOF, NO CLAIM.**
-
-The project does not claim customers, partners, funding, revenue, successful outcomes, or physical implementation without evidence.
-
-## Safe navigation
-
-- **What is this project?** → PUBLIC
-- **What actually exists and how does the system work?** → CORE
-- **How can I bring a real problem or collaboration pathway?** → CORE / public inbound
-- **How are durable decisions and constraints preserved?** → MEMORY
-- **How do I contribute?** → CORE contribution guidance
-
-The public entry point is intentionally self-service so ordinary questions do not require contacting the Founder.
-
-## System contract
-
-Authoritative repository boundaries are defined in [CORE/SYSTEM_CONTRACT.md](https://github.com/rllibo833-sudo/kawasan-masjid-1000ha/blob/main/SYSTEM_CONTRACT.md).
-
-**This repository is the memory layer, not the front door.**
-
-
-## System link map
-
-See [`SYSTEM_LINK_MAP.md`](docs/SYSTEM_LINK_MAP.md) for the canonical three-repository synchronization boundary.
+**NO PROOF, NO CLAIM.** This archive preserves history; it does not prove a current runtime or production outcome.
