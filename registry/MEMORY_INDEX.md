@@ -1,38 +1,7 @@
-# Memory Index
+# Memory Index — LEGACY ARCHIVE POINTER
 
-| Memory ID | Date | Status | Project | Record |
-|---|---|---|---|---|
-| MEM-20261006-0001 | 2026-10-06 | FOUNDER-APPROVED | KM1000-P001 | [Founder Economic Positioning](../memory/2026-10-06-FOUNDER-ECONOMIC-POSITIONING.md) |
-| MEM-20261006-0002 | 2026-10-06 | FOUNDER-APPROVED | KM1000-P001 | [Day 3 Synchronization](../memory/2026-10-06-DAY-3-SYNCHRONIZATION.md) |
-| MEM-20261006-0003 | 2026-10-06 | FOUNDER-APPROVED | KM1000-P001 | [Authenticated Runtime Gate](../memory/2026-10-06-AUTHENTICATED-RUNTIME-GATE.md) |
-| MEM-20261006-0004 | 2026-10-06 | FOUNDER-APPROVED | KM1000-P001 | [Real-World Digitalization Problem](../memory/2026-10-06-REAL-WORLD-DIGITALIZATION-PROBLEM.md) |
-| MEM-20261006-0005 | 2026-10-06 | FOUNDER-APPROVED | KM1000-P001 | [Partnership-First Operating Direction](../memory/2026-10-06-PARTNERSHIP-FIRST-OPERATING-DIRECTION.md) |
-| MEM-20261006-0006 | 2026-10-06 | FOUNDER-APPROVED | KM1000-P001 | [Partnership Readiness Direction](../memory/2026-10-06-PARTNERSHIP-READINESS-DIRECTION.md) |
-| MEM-20261006-0007 | 2026-10-06 | FOUNDER-APPROVED | KM1000-P001 | [Partnership Candidate Discovery Direction](../memory/2026-10-06-PARTNERSHIP-CANDIDATE-DISCOVERY-DIRECTION.md) |
-| MEM-20261006-0008 | 2026-10-06 | FOUNDER-APPROVED | KM1000-P001 | [Partnership Candidate Shortlist](../memory/2026-10-06-PARTNERSHIP-CANDIDATE-SHORTLIST.md) |
-| MEM-20261006-0009 | 2026-10-06 | FOUNDER-APPROVED | KM1000-P001 | [Repository Hygiene & Cross-Chat Sync](../memory/2026-10-06-REPOSITORY-HYGIENE-AND-SYNC.md) |
-| MEM-20261006-0010 | 2026-10-06 | FOUNDER-APPROVED | KM1000-P001 | [ASTIF Capability Mapping V2](../memory/2026-10-06-ASTIF-CAPABILITY-MAPPING-V2.md) |
-| MEM-20261006-0011 | 2026-10-06 | FOUNDER-APPROVED | KM1000-P001 | [ASTIF Institutional Mapping](../memory/2026-10-06-ASTIF-INSTITUTIONAL-MAPPING.md) |
-| MEM-20261006-0012 | 2026-10-06 | FOUNDER-APPROVED | KM1000-P001 | [ULM Contact Gate Open](../memory/2026-10-06-ULM-CONTACT-GATE-OPEN.md) |
-| MEM-20261006-0013 | 2026-10-06 | FOUNDER-APPROVED | KM1000-P001 | [ULM Transmission & Integration Discipline](../memory/2026-10-06-ULM-TRANSMISSION-INTEGRATION-DISCIPLINE.md) |
-| MEM-20261006-0014 | 2026-10-06 | VERIFIED | KM1000-P001 | [Auth Runtime Bootstrap Fix](../memory/2026-10-06-AUTH-RUNTIME-BOOTSTRAP-FIX.md) |
-| MEM-20261006-0015 | 2026-10-06 | VERIFIED | KM1000-P001 | [Authenticated Runtime + Founder Access](../memory/2026-10-06-AUTHENTICATED-RUNTIME-FOUNDER-ACCESS.md) |
+**This index is superseded as of 2026-10-14.** The current index is maintained in [Founder-OS](https://github.com/rllibo833-sudo/Founder-OS/blob/main/registry/MEMORY_INDEX.md).
 
-## Recovery sources
+New memory records must be created only in Founder-OS. This legacy index and the historical files beside it are retained during a reference/link audit and should not be updated.
 
-1. Central OS: `rllibo833-sudo/kawasan-masjid-1000ha`
-2. Canonical status: `docs/status/TERKINI.md`
-3. Founder AI Memory Architecture: `docs/architecture/FOUNDER_AI_MEMORY_ARCHITECTURE_V1.md`
-4. Active opportunity/economic contracts in Central OS
-
-## Recovery protocol
-
-`NEW CHAT → LOAD REGISTRY → LOAD RELEVANT MEMORY → LOAD PROJECT STATE → LOAD ACTIVE CONTRACTS → CONTINUE`
-
-## Integrity rule
-
-No secrets, credentials, OTPs, payment secrets, KYC, or unnecessary sensitive personal data may be committed to this public memory repository.
-
-- MEM-20261006-0016 — Website Discoverability + Production Synchronization Audit — VERIFIED
-
-- MEM-20261007-0047 — Three-Repository Public Boundary Synchronization — FOUNDER-APPROVED
+Canonical contract: https://github.com/rllibo833-sudo/Founder-OS/blob/main/docs/CANONICAL_INTEGRATION_CONTRACT.md
